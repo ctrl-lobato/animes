@@ -1,0 +1,491 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body {
+    background-color: #db0000;
+}
+
+nav {
+    height: 12vh;
+}
+
+.navbar {
+    background-color: #000;
+    box-shadow: 0px 0px 16px 16px #000000c4;
+    padding: 0%;
+    --bs-navbar-active-color: #fff;
+
+        z-index: 1050; 
+        position: relative;   
+}
+
+.navbar-collapse.show {
+    background-color: #000;
+    width: 100%;
+    height: 70vh;
+}
+
+.navbar-toggler {
+    background-color: #fff;
+}
+
+.nav-link {
+    display: flex;
+    color: #fff;
+    height: 100%;
+    align-items: center;
+    font-family: "Oswald", sans-serif;
+    font-weight: 400;
+
+    border-bottom: none;
+}
+
+.container-fluid {
+    height: 100%;
+}
+
+.navbar-collapse {
+    height: 100%;
+}
+
+.navbar-nav {
+    height: 100%;
+    gap: 40px;
+}
+
+.nav-item {
+    height: 100%;
+}
+
+.nav-link.aot:hover {
+    border-bottom: 4px solid #0d7b3f;
+    color: #0d7b3f;
+    font-weight: 600;
+}
+.nav-link.csm:hover {
+    border-bottom: 4px solid #ff7811;
+    color: #ff7811;
+    font-weight: 600;
+}
+.nav-link.dhd:hover {
+    border-bottom: 4px solid #db0000;
+    color: #db0000;
+    font-weight: 600;
+}
+.nav-link.jjk:hover {
+    border-bottom: 4px solid #a0097a;
+    color: #a0097a;
+    font-weight: 600;
+}
+
+.dropdown-menu {
+    font-family: "Barlow", sans-serif;
+    display: none; 
+    position: absolute;
+}
+
+.dropdown-menu.show {
+    display: block;
+    position: absolute; 
+}
+
+.dropdown-menu.aot {
+    background-color: #0d7b3f;
+    --bs-dropdown-link-color: #fff;
+    --bs-dropdown-link-active-bg: #000;
+}
+.dropdown-menu.csm {
+    background-color: #ff7811;
+    --bs-dropdown-link-color: #fff;
+    --bs-dropdown-link-active-bg: #000;
+}
+.dropdown-menu.dhd {
+    background-color: #db0000;
+    --bs-dropdown-link-color: #fff;
+    --bs-dropdown-link-active-bg: #000;
+}
+.dropdown-menu.jjk {
+    background-color: #a0097a;
+    --bs-dropdown-link-color: #fff;
+    --bs-dropdown-link-active-bg: #000;
+}
+
+.footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px 40px;
+
+    background: #000;
+    height: 50vh;
+
+    box-shadow: 0px -8px 32px 16px #000;
+}
+
+.footer-content {
+    display: inline;
+    justify-content: flex-start;
+    align-items: center;
+    padding-right: 80px;
+    border-right: 4px solid #fff;
+    height: 100%;
+}
+
+.footer-text h4 {
+    color: #fff;
+    font-family: "Barlow", sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+}
+
+.footer-text {
+    padding-top: 16px;
+}
+
+.logo-footer {
+    height: 16vh;
+    width: auto;
+    margin: 32px 0px;
+}
+
+.footer-social {
+    display: block;
+    align-content: end;
+    padding: 32px;
+}
+
+.footer-icons {
+    display: flex;
+    gap: 24px;
+}
+
+.social-text {
+    display: flex;
+    padding-bottom: 16px;
+    justify-content: center;
+}
+
+.social-text h4 {
+    font-family: "Oswald", sans-serif;
+    font-weight: 600;
+    color: #fff;
+    font-size: 2rem;
+}
+
+.icon {
+    height: 32px;
+    width: auto;
+}
+
+.header {
+    display: flex;
+    height: 90dvh;
+    
+    background-image: url(../assets/images/dorohedorohead.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+
+    mask-image: linear-gradient( #000000, rgba(0, 0, 0, 0.01));
+
+    justify-content: end;
+    align-items: end;
+}
+
+.imgtoolip {
+    height: 64vh;
+    width: auto;
+
+    animation: tooltipscale 2s 2s infinite ease-in-out;
+}
+
+@keyframes tooltipscale {
+    0%{scale: 1;}
+    50%{scale: 1.1;}
+    100%{scale: 1;}
+}
+
+.custom-tooltip {
+    --bs-tooltip-bg: #fff;
+    --bs-tooltip-color: #000;
+    --bs-tooltip-opacity: 100%;
+    --bs-tooltip-font-size: 1.5rem;
+    --bs-tooltip-max-width: 500px;
+    --bs-tooltip-padding-x: 20px;
+    --bs-tooltip-padding-y: 20px;
+    --bs-tooltip-arrow-width: 20px;
+    --bs-tooltip-arrow-height: 20px;
+    font-family: "Barlow", sans-serif;
+    font-weight: 600;
+    box-shadow: 0px 0px 24px 8px #000;
+    border-radius: 50%;
+}
+
+.imgtoolip:hover, .imgtoolip:active, .imgtoolip.active {
+    scale: 1;
+    animation: none;
+}
+
+.section1 {
+    display: flex;
+    padding: 80px 80px 0px 80px;
+    gap: 24px;
+
+    justify-items: center;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+
+    color: #fff;
+}
+
+.section1 h1 {
+    font-family: "Oswald", sans-serif;
+    font-size: 5rem;
+    font-weight: 600;
+    text-shadow: 0px 0px 16px #550e0e;
+}
+
+.section1 p {
+    display: flex;
+    font-family: "Barlow", sans-serif;
+    font-size: 1.3rem;
+    font-weight: 400;
+    text-shadow: 0px 0px 24px #550e0e;
+
+    padding: 0px 40px;
+}
+
+.imgdorohedoro {
+    height: 400px;
+    background-image: url(../assets/images/dorohedoroimg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.section2 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    background-color: #000;
+    padding: 120px 80px;
+}
+
+.infocgi {
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+    gap: 16px;
+
+    padding-right: 64px;
+}
+
+.infocgi h2 {
+    font-family: "Oswald", sans-serif;
+    font-size: 3rem;
+    font-weight: 600;
+}
+
+.infocgi p {
+    font-family: "Barlow", sans-serif;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.section3av {
+    height: 110dvh;
+    padding: 80px;
+}
+
+.carousel-inner {
+    height: 60vh;
+}
+
+.vatitle {
+    display: flex;
+
+    color: #fff;
+    font-family: "Oswald", sans-serif;
+    font-size: 5rem;
+    font-weight: 600;
+    justify-content: flex-end;
+    padding-bottom: 24px;
+
+    text-shadow: 0px 0px 16px #550e0e;
+}
+
+@media (max-width: 768px) {
+    nav {
+        width: 100%;
+    }
+
+    .navbar {
+        width: 100%;
+    }
+
+    .navbar-nav {
+        flex-direction: column;
+        text-align: center; 
+        gap: 10px; 
+    }
+
+    .container-fluid {
+        justify-content: space-between;
+    }
+
+    .navbar-toggler {
+        margin-left: auto; 
+    }
+
+    .dropdown-menu {
+        position: relative;
+        width: 100%;
+    }
+
+    .dropdown-menu a {
+        text-align: center; 
+    }
+
+    .navbar-collapse {
+        justify-content: flex-start;
+    }
+
+    .footer {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        padding: 10px 40px;
+        background: #000;
+        align-content: center;
+        align-items: center;
+        height: 70dvh;
+    }
+
+    .footer-content {
+        padding-right: 0px;
+        border-right: none;
+    }
+    
+    .header {
+        background-size: contain;
+        background-repeat: repeat;
+    }
+
+    .custom-tooltip {
+        --bs-tooltip-font-size: 1.1rem;
+        --bs-tooltip-max-width: 450px;
+        --bs-tooltip-arrow-width: 10px;
+        --bs-tooltip-arrow-height: 10px;
+        font-weight: 500;
+    }
+    
+    .section1 h1 {
+        font-size: 3.3rem;
+    }
+
+    .section1 p {
+        font-size: 1rem;
+    }
+
+    .imgdorohedoro {
+        height: 200px;
+        background-size: 100%;
+    }
+
+    .section2 {
+        grid-template-columns: 1fr;
+        justify-items: center;
+        gap: 32px;
+    }
+
+    .infocgi {
+        align-items: center;
+        padding-right: 0px;
+    }
+    
+    .vatitle {
+        font-size: 3.3rem;
+        padding-bottom: 16px;
+    }
+
+    .section3av {
+        height: 90dvh;
+    }
+    
+    .carousel-inner {
+        height: 50vh;
+    }
+}
+
+@media (max-width: 1024px) {
+    nav {
+        width: 100%;
+    }
+
+    .navbar {
+        width: 100%;
+    }
+
+    .navbar-nav {
+        gap: 20px; 
+    }
+
+    .navbar-collapse {
+        justify-content: center;
+    }
+
+    .container-fluid {
+        justify-content: space-between; 
+    }
+
+    .header {
+        background-size: contain;
+        background-repeat: repeat;
+    }
+
+    .section1 h1 {
+        font-size: 4.5rem;
+    }
+
+    .section1 p {
+        font-size: 1.1rem;
+    }
+
+    .custom-tooltip {
+        --bs-tooltip-font-size: 1.3rem;
+        --bs-tooltip-max-width: 450px;
+        --bs-tooltip-arrow-width: 10px;
+        --bs-tooltip-arrow-height: 10px;
+        font-weight: 500;
+    }
+
+    .imgdorohedoro {
+        height: 350px;
+        background-size: cover;
+    }
+
+    .infocgi {
+        padding-right: 40px;
+    }
+
+    .infocgi h2 {
+        font-size: 2.5rem;
+    }
+
+    iframe {
+        padding-left: 24px;
+        width: 100%;
+    }
+
+    .video-container {
+        display: flex;
+        align-items: center;
+    }
+
+    .section3av {
+        height: 100dvh;
+    }
+    
+    .carousel-inner {
+        height: 55vh;
+    }
+}

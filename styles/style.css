@@ -1,0 +1,490 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+nav {
+    height: 12vh;
+}
+
+.navbar {
+    background-color: #000;
+    box-shadow: 0px 0px 16px 16px #000000c4;
+    padding: 0%;
+    --bs-navbar-active-color: #fff;
+
+            z-index: 1050; 
+            position: relative;    
+}
+
+.navbar-collapse.show {
+    background-color: #000;
+    width: 100%;
+    height: 70vh;
+}
+
+.navbar-toggler {
+    background-color: #fff;
+}
+
+.nav-link {
+    display: flex;
+    color: #fff;
+    height: 100%;
+    align-items: center;
+    font-family: "Oswald", sans-serif;
+    font-weight: 400;
+
+    border-bottom: none;
+}
+
+.container-fluid {
+    height: 100%;
+}
+
+.navbar-collapse {
+    height: 100%;
+}
+
+.navbar-nav {
+    height: 100%;
+    gap: 40px;
+}
+
+.nav-item {
+    height: 100%;
+}
+
+.nav-link.aot:hover {
+    border-bottom: 4px solid #0d7b3f;
+    color: #0d7b3f;
+    font-weight: 600;
+}
+.nav-link.csm:hover {
+    border-bottom: 4px solid #ff7811;
+    color: #ff7811;
+    font-weight: 600;
+}
+.nav-link.dhd:hover {
+    border-bottom: 4px solid #db0000;
+    color: #db0000;
+    font-weight: 600;
+}
+.nav-link.jjk:hover {
+    border-bottom: 4px solid #a0097a;
+    color: #a0097a;
+    font-weight: 600;
+}
+
+.dropdown-menu {
+    font-family: "Barlow", sans-serif;
+    display: none; 
+    position: absolute;
+}
+
+.dropdown-menu.show {
+    display: block;
+    position: absolute; 
+}
+
+.dropdown-menu.aot {
+    background-color: #0d7b3f;
+    --bs-dropdown-link-color: #fff;
+    --bs-dropdown-link-active-bg: #000;
+}
+.dropdown-menu.csm {
+    background-color: #ff7811;
+    --bs-dropdown-link-color: #fff;
+    --bs-dropdown-link-active-bg: #000;
+}
+.dropdown-menu.dhd {
+    background-color: #db0000;
+    --bs-dropdown-link-color: #fff;
+    --bs-dropdown-link-active-bg: #000;
+}
+.dropdown-menu.jjk {
+    background-color: #a0097a;
+    --bs-dropdown-link-color: #fff;
+    --bs-dropdown-link-active-bg: #000;
+}
+
+.backgroundchange {
+    height: 100dvh;
+
+    background-image: url(../assets/images/studiomappa.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+
+    animation: slide 20s 5s infinite;
+
+    align-content: end;
+    justify-items: end;
+}
+
+@keyframes slide {
+    0%{background-image: url(../assets/images/studiomappa.jpg);}
+    25%{background-image: url(../assets/images/studiomappa2.jpg);}
+    50%{background-image: url(../assets/images/studiomappa3.jpg);}
+    75%{background-image: url(../assets/images/studiomappa4.jpg);}
+    100%{background-image: url(../assets/images/studiomappa.jpg);}
+}
+
+.footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px 40px;
+
+    background: #000;
+    height: 50vh;
+}
+
+.footer-content {
+    display: inline;
+    justify-content: flex-start;
+    align-items: center;
+    padding-right: 80px;
+    border-right: 4px solid #fff;
+    height: 100%;
+}
+
+.footer-text h4 {
+    color: #fff;
+    font-family: "Barlow", sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+}
+
+.footer-text {
+    padding-top: 16px;
+}
+
+.logo-footer {
+    height: 16vh;
+    width: auto;
+    margin: 32px 0px;
+}
+
+.footer-social {
+    display: block;
+    align-content: end;
+    padding: 32px;
+}
+
+.footer-icons {
+    display: flex;
+    gap: 24px;
+}
+
+.social-text {
+    display: flex;
+    padding-bottom: 16px;
+    justify-content: center;
+}
+
+.social-text h4 {
+    font-family: "Oswald", sans-serif;
+    font-weight: 600;
+    color: #fff;
+    font-size: 2rem;
+}
+
+.icon {
+    height: 32px;
+    width: auto;
+}
+
+.info-estudio {
+    height: 70dvh;
+    background-color: #000;
+    box-shadow: 0px 0px 72px 88px #000;
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.imgtoolip {
+    height: 64vh;
+    width: auto;
+
+    animation: tooltipscale 2s 2s infinite ease-in-out;
+}
+
+@keyframes tooltipscale {
+    0%{scale: 1;}
+    50%{scale: 1.1;}
+    100%{scale: 1;}
+}
+
+.custom-tooltip {
+    --bs-tooltip-bg: #fff;
+    --bs-tooltip-color: #000;
+    --bs-tooltip-opacity: 100%;
+    --bs-tooltip-font-size: 1.5rem;
+    --bs-tooltip-max-width: 500px;
+    --bs-tooltip-padding-x: 20px;
+    --bs-tooltip-padding-y: 20px;
+    --bs-tooltip-arrow-width: 20px;
+    --bs-tooltip-arrow-height: 20px;
+    font-family: "Barlow", sans-serif;
+    font-weight: 600;
+    box-shadow: 0px 0px 24px 8px #000;
+    border-radius: 50%;
+}
+
+.imgtoolip:hover, .imgtoolip:active, .imgtoolip.active {
+    scale: 1;
+    animation: none;
+}
+
+.section2 {
+    padding: 56px 48px;
+    color: #fff;
+    font-family: "Barlow", sans-serif;
+}
+
+.section2 > h3 {
+    font-weight: 700;
+    font-size: 3rem;
+    padding-bottom: 24px;
+}
+
+.section2 > p {
+    font-weight: 400;
+    font-size: 1rem;
+}
+
+.section3 {
+    padding: 56px 48px;
+}
+
+.carousel {
+    height: 65dvh;
+}
+
+.carousel-item.active {
+    display: flex;
+    flex-direction: row;
+
+    gap: 24px;
+    align-items: center ;
+    justify-content: center;
+}
+
+.card {
+    width: 16vw;
+    font-family: "Barlow", sans-serif;
+    font-weight: 700;
+    font-size: 1rem;
+    color: #000;
+
+    transition: transform 0.5s ease-in-out;
+}
+
+.card:hover {
+    transform: scale(0.9);
+    transition: transform 0.5s ease-in-out;
+}
+
+.imgkakegurui {
+    height: 50vh;
+    width: auto;
+}
+
+.imgtir {
+    height: 50vh;
+    width: auto;
+}
+
+.imgkdororo {
+    height: 50vh;
+    width: auto;
+}
+
+.imgyoi {
+    height: 50vh;
+    width: auto;
+}
+
+
+.textos3 > h5 {
+    display: flex;
+    color: #fff;
+    font-family: "Oswald", sans-serif;
+    font-weight: 700;
+    font-size: 3rem;
+    padding-bottom: 24px;
+    justify-content: center;
+}
+
+
+@media (max-width: 768px) {
+    nav {
+        width: 100%;
+    }
+
+    .navbar {
+        width: 100%;
+    }
+
+    .navbar-nav {
+        flex-direction: column; 
+        text-align: center; 
+        gap: 10px;
+    }
+
+    .container-fluid {
+        justify-content: space-between;
+    }
+
+    .navbar-toggler {
+        margin-left: auto; 
+    }
+
+    .dropdown-menu {
+        position: relative;
+        width: 100%; 
+    }
+
+    .dropdown-menu a {
+        text-align: center;
+    }
+
+    .navbar-collapse {
+        justify-content: flex-start;
+    }
+
+    .footer {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        padding: 10px 40px;
+        background: #000;
+        align-content: center;
+        align-items: center;
+        height: 70dvh;
+    }
+
+    .footer-content {
+        padding-right: 0px;
+        border-right: none;
+    }
+
+    .backgroundchange {
+        background-size: cover;
+    }
+
+    .custom-tooltip {
+        --bs-tooltip-font-size: 1.1rem;
+        --bs-tooltip-max-width: 400px;
+        --bs-tooltip-arrow-width: 10px;
+        --bs-tooltip-arrow-height: 10px;
+        font-family: "Barlow", sans-serif;
+        font-weight: 500;
+        box-shadow: 0px 0px 24px 8px #000;
+        border-radius: 50%;
+    }
+
+    .info-estudio {
+        display: block;
+        height: auto;
+    }
+    
+    .section2 {
+        padding: 64px 64px 16px 64px;
+    }
+
+    .carousel {
+        height: 70dvh;
+    }
+
+    .card {
+        width: 200px;
+    }
+
+    .imgkakegurui {
+        height: 300px;
+        width: auto;
+    }
+    
+    .imgtir {
+        height: 300px;
+        width: auto;
+    }
+    
+    .imgkdororo {
+        height: 300px;
+        width: auto;
+    }
+    
+    .imgyoi {
+        height: 280px;
+        width: auto;
+    }
+
+
+}
+
+@media (max-width: 1024px) {
+    nav {
+        width: 100%;
+    }
+
+    .navbar {
+        width: 100%;
+    }
+
+    .navbar-nav {
+        gap: 20px; 
+    }
+
+    .navbar-collapse {
+        justify-content: center; 
+    }
+
+    .container-fluid {
+        justify-content: space-between; 
+    }
+
+    .backgroundchange {
+        background-size: cover;
+    }
+
+    .custom-tooltip {
+        --bs-tooltip-font-size: 1.3rem;
+        --bs-tooltip-max-width: 500px;
+        --bs-tooltip-arrow-width: 15px;
+        --bs-tooltip-arrow-height: 15px;
+        font-weight: 500;
+    }
+
+    .info-estudio {
+        height: auto;
+    }
+
+    .carousel {
+        height: 55dvh;
+    }
+
+    .card {
+        width: 150px;
+    }
+
+    .imgkakegurui {
+        height: 200px;
+        width: auto;
+    }
+    
+    .imgtir {
+        height: 180px;
+        width: auto;
+    }
+    
+    .imgkdororo {
+        height: 190px;
+        width: auto;
+    }
+    
+    .imgyoi {
+        height: 210px;
+        width: auto;
+    }
+}
